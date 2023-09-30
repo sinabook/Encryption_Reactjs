@@ -2,7 +2,6 @@ import styles from '../style.css';
 import { useState } from 'react';
 import Dash from "./dash";
 import root from '../index';
-import videoBg from '../images/videoBg.webm';
 
 
 
@@ -44,7 +43,6 @@ const CypherRandom = () => {
         setMessage("")
     }
     return (<>
-        <video style={{ position: "absolute", left: "0%", top: "0%" }} src={videoBg} autoPlay muted loop />
 
         <button className={styles.button} style={{ position: "absolute", left: "2%", top: "2%", width: "fit-content" }} onClick={handleDash}>Back</button>
 

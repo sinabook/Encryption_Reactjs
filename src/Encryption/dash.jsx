@@ -2,17 +2,13 @@ import root from "../index.js";
 import Cypher from "./cypher.jsx";
 import CypherRandom from "./cypherRandom.jsx";
 import styles from '../style.css';
-import videoBg from '../images/videoBg.webm';
 import PasswordValidation from "./passwordValidation.jsx";
 import PasswordGenerator from "./randomPassGenerator.jsx";
-import Dashboard from "../dashboard.jsx";
+import Uniform from "./uniform.jsx";
 const Dash = () => {
     return (<>
-        <video style={{ position: "absolute", left: "0%", top: "0%" }} src={videoBg} autoPlay muted loop />
-        <button className={styles.button} style={{ position: "absolute", left: "2%", top: "2%", width: "fit-content" }} onClick={handleDash}>Back</button>
 
-        <div className={styles.div} style={{ position: "absolute", left: "40%", top: "10%" }}>Welcome to this Encryption tab
-        </div>
+
         <div className={styles.selectingencryption} style={{ position: "absolute", left: "38.5%", top: "15%" }}>Please select one of the following
         </div>
 
@@ -21,12 +17,15 @@ const Dash = () => {
 
         <button style={{ position: "absolute", left: "10%", top: "40%" }} className={styles.button} onClick={handlePasswordValidation} >Strong Password Suggestion</button>
         <button style={{ position: "absolute", left: "10%", top: "50%" }} className={styles.button} onClick={handlePasswordGenerator} >Password Generator</button>
+        <button style={{ position: "absolute", left: "10%", top: "60%" }} className={styles.button} onClick={handleUniform} >Test How Uniform You are</button>
+
 
     </>);
 
 }
-const handleDash = () => {
-    root.render(<Dashboard />);
+
+const handleUniform = () => {
+    root.render(<Uniform />)
 }
 const handleCypher = () => {
     root.render(<Cypher />);

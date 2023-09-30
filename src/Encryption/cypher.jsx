@@ -2,7 +2,6 @@ import { useState } from "react";
 import root from '../index';
 import styles from '../style.css'
 import Dash from "./dash";
-import videoBg from '../images/videoBg.webm';
 
 const Cypher = () => {
 
@@ -41,7 +40,6 @@ const Cypher = () => {
         root.render(<Dash />)
     }
     return (<>
-        <video style={{ position: "absolute", left: "0%", top: "0%" }} src={videoBg} autoPlay muted loop />
 
         <button className={styles.button} style={{ position: "absolute", left: "2%", top: "2%", width: "fit-content" }} onClick={handleDash}>Back</button>
         <form onSubmit={handleSubmit}>

@@ -1,7 +1,7 @@
 body {
-    background-image: url("./images/hell.jpg");
+    background-image: url("./assets/yellowBackground.png");
     background-repeat: no-repeat;
-    background-size: 100% 745px;
+    background-size: 100%;
     background-position-x: left;
     background-position-y: left;
 

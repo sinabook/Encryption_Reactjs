@@ -1,4 +1,3 @@
-import videoBg from '../images/videoBg.webm';
 import { useState } from 'react';
 import root from '../index'
 import Dash from './dash';
@@ -41,7 +40,6 @@ const PasswordValidation = () => {
 
     }
     return (<>
-        <video style={{ position: "absolute", left: "0%", top: "0%" }} src={videoBg} autoPlay muted loop />
         <button className={styles.button} style={{ position: "absolute", left: "2%", top: "2%", width: "fit-content" }} onClick={handleDash}>Back</button>
 
         <form onSubmit={handleSubmit}>
