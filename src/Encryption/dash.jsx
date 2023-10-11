@@ -17,16 +17,13 @@ const Dash = () => {
 
         <button style={{ position: "absolute", left: "10%", top: "40%" }} className={styles.button} onClick={handlePasswordValidation} >Strong Password Suggestion</button>
         <button style={{ position: "absolute", left: "10%", top: "50%" }} className={styles.button} onClick={handlePasswordGenerator} >Password Generator</button>
-        <button style={{ position: "absolute", left: "10%", top: "60%" }} className={styles.button} onClick={handleUniform} >Test How Uniform You are</button>
 
 
     </>);
 
 }
 
-const handleUniform = () => {
-    root.render(<Uniform />)
-}
+
 const handleCypher = () => {
     root.render(<Cypher />);
 }
